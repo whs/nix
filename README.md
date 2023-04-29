@@ -16,7 +16,7 @@ Then in your flake, add this repository
 {
 	inputs = {
 		whs.url = "github:whs/nix";
-	}
+	};
 }
 ```
 
