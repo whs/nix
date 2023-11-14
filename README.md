@@ -22,9 +22,11 @@ Then in your flake, add this repository
 
 ## Packages
 ### readsb
-Available as standalone packages or as NixOS module.
+[Readsb is a Mode-S/ADSB/TIS decoder for RTLSDR, BladeRF, Modes-Beast and GNS5894 devices](https://github.com/wiedehopf/readsb)
 
-Tested to be working on x86_64 or cross compiled to Raspberry Pi 1B/B+ (armv6hf)
+Available as standalone package or as NixOS module.
+
+Tested to build and start on Linux x86_64 or cross compiled to Raspberry Pi 1B/B+ (armv6hf)
 
 #### Package options
 

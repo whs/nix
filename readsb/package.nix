@@ -10,8 +10,8 @@
 }:
 let
   # When updating version, make sure upstream do not edit Makefile or files in debian/
-  version = "3.14.1604";
-  sha256 = "sha256-4t8XQyKHJVbF3x9Y7/eT8AjzVw4MH/pWkIy34rEIN+U=";
+  version = "3.14.1606";
+  sha256 = "sha256-XjvWpxCYCoNPDPwbvLKk8l23dhHL98HbVK6+Zn+36Wk=";
 in stdenv.mkDerivation {
   pname = "readsb";
   inherit version;
