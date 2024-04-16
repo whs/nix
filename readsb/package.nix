@@ -70,6 +70,6 @@ in stdenv.mkDerivation {
     license = lib.licenses.gpl3Plus;
     mainProgram = "readsb";
     platforms = lib.platforms.linux;
-    sourceProvenance = lib.sourceTypes.fromSource;
+    sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
 }

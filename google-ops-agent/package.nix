@@ -25,7 +25,7 @@ in rec {
 			license = lib.licenses.asl20;
 			mainProgram = "google_cloud_ops_agent_engine";
 			platforms = lib.platforms.linux;
-			sourceProvenance = lib.sourceTypes.fromSource;
+			sourceProvenance = [ lib.sourceTypes.fromSource ];
 		};
 	};
 }

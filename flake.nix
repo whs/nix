@@ -1,7 +1,6 @@
 {
 	outputs = { self, nixpkgs, flake-utils }: {
-		nixosModules.readsb = import ./readsb/module.nix;
-		nixosModules.crisp-status-local = import ./crisp-status-local/module.nix;
+		nixosModules = import ./modules.nix;
 	} // flake-utils.lib.eachDefaultSystem (system: 
 		let
 			pkgs = import nixpkgs { inherit system; };
