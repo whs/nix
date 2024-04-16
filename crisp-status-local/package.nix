@@ -1,5 +1,5 @@
 {
-  lib, stdenv, fetchFromGitHub, rustPlatform
+  lib, stdenv, pkgs, rustPlatform
 }:
 let
   version = "1.3.7";
@@ -7,7 +7,7 @@ let
 in rustPlatform.buildRustPackage {
   pname = "crisp-status-local";
   inherit version;
-  src = fetchFromGitHub {
+  src = pkgs.fetchFromGitHub {
     owner = "crisp-im";
     repo = "crisp-status-local";
     rev = "v${version}";
