@@ -20,5 +20,6 @@ in rustPlatform.buildRustPackage {
     description = "Monitor internal hosts and report their status to Crisp Status";
     homepage = "https://github.com/crisp-im/crisp-status-local";
     license = lib.licenses.mpl20;
+    sourceProvenance = lib.sourceTypes.fromSource;
   };
 }
